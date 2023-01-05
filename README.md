@@ -8,6 +8,7 @@ Trailed Service (nestjs, postgresql, prisma)
 
 ### Built With
 
+- [IGDB](https://api-docs.igdb.com/)
 - nestjs(express)
 - typescript
 - prisma
