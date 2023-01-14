@@ -1,6 +1,6 @@
 # Project Title
 
-Trailed Service (nestjs, postgresql, prisma)
+Trailed Service (nestjs, postgresql, prisma, jenkins, docker)
 
 ## About The Project
 
