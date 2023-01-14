@@ -1,8 +1,23 @@
-# Set the version of docker compose to use
 version: '3.9'
 
-# The containers that compose the project
 services:
+  nest:
+    container_name: nest
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run start:dev
+    depends_on:
+      - db
+    env_file:
+      - .env
+    expose:
+      - 8000
   db:
     image: postgres:15
     restart: always
